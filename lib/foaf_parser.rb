@@ -1,0 +1,2 @@
+class FoafParser
+end
