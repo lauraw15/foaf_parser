@@ -12,4 +12,10 @@ describe FoafParser do
     expect(fp.speak).to eq("I'm FoafParser!")
   end
   
+  it 'instantiates with rdf' do
+    fp = FoafParser.new("http://stanford.edu/~bess/foaf.rdf")
+    expect(fp).to be_kind_of(FoafParser)
+  end
+
+  
 end
